@@ -1,0 +1,32 @@
+<html>
+<head> 
+<title> Search an Object</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta 
+</head>
+<style>
+div#loading {
+    width: 50px;
+    height: 35px;
+    display: none;
+    background: url(/static/ajax-loader.gif) no-repeat;
+    cursor: wait;
+	position : absolute;
+	top :10%;
+	left : 50%;
+    }
+</style>
+<body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <div id="loading"></div>
+    <div id="content">
+        <h3>Type anything:</h3>
+        <p>
+        	<form action="/" method="post">
+		      <input type="text" name="title" id = "title" placeholder="Title">
+		      <input type="submit" value="Submit">
+		    </form>
+        </p>
+    </div>	
+</body>
+</html>
